@@ -1,13 +1,19 @@
-let buttons = document.querySelectorAll('.complete_btn');
 
-function disableButton(button) {
+    const completeButtons = document.querySelectorAll('.complete_btn');
+    let taskCount = document.getElementById('task_count');
    
-    button.setAttribute("disabled", "");
-    console.log('click');
+    console.log(taskCount.innerText);
     
-}
-buttons.forEach(button => {
-    button.addEventListener('click', () => disableButton(button));
-});
+    completeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            console.log('click');
 
- 
+            alert('board update successfully');
+            button.disabled = true;
+            button.style.backgroundColor = 'gray';
+            button.style.cursor = 'not-allowed';
+          
+            let count = taskCount.innerText - 1;
+            taskCount.innerText = count;
+        });
+    });
