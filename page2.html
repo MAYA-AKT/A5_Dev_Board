@@ -16,6 +16,7 @@
             background-color: #5115f7;
             cursor: pointer;
         }
+       
     </style>
 </head>
 <body class="bgc container mx-auto">
@@ -41,12 +42,56 @@
     <main>
         <h1 class="text-center text-4xl my-6 font-bold">Blogs</h1>
         <div>
-            <div class="bg-white ">
-                <p class="font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</p>
+            <div class="bg-white mt-5 p-5 rounded-lg">
+                <p class="font-bold text-xl pb-4">Question-1: What are the different ways to select an element in the DOM?</p>
                 <hr>
-                <p class="">Ans:</p>
+                <p  class="text-gray-500 pt-4"> Different ways to select an element in DOM - </p>
+                <ul class="text-gray-500">
+                    <li>Using getElementById: The getElementById method allows you to select an element by its ID.</li>
+                    <li>Using getElementsByClassName</li>
+                    <li>Using getElementsByTagName</li>
+                    <li>Using querySelector</li>
+                    <li>Using querySelectorAll</li>
+                    <li>Changing the Text Content</li>
+                    <li>Changing the HTML Content</li>
+                </ul>
             </div>
-            
+            <div class="mt-4 bg-white p-5 rounded-lg">
+                <p class="font-bold text-xl pb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <hr>
+                <p  class="text-gray-500 pt-4">textContents is all text contained by an element and all its children that are for formatting purposes only. innerText returns all text contained by an element and all its child elements. innerHtml returns all text, including html tags, that is contained by an element.</p>
+                
+            </div>
+            <div class="mt-4 bg-white p-5 rounded-lg">
+                <p class="font-bold text-xl pb-4">Question-3: What is event delegation in the DOM?</p>
+                <hr>
+                <p  class="text-gray-500 pt-4">Event delegation in the DOM is a technique where a single event listener is attached to a parent element to handle events of its child elements, leveraging event bubbling to efficiently manage events on multiple elements. </p>
+                
+            </div>
+            <div class="mt-4 bg-white p-5 rounded-lg">
+                <p class="font-bold text-xl pb-4">Question-4: What is event bubbling in the DOM?</p>
+                <hr>
+                <p class="text-gray-500 pt-4">In the DOM, event bubbling is a mechanism where an event triggered on a nested element propagates upwards to its parent and ancestor elements, allowing for centralized event handling. </p>
+                
+            </div>
+            <div class="mt-4 bg-white p-5 rounded-lg">
+                <p class="font-bold text-xl pb-4">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <hr>
+                <div class="text-gray-500 pt-4">
+                    <h4 > Creating Elements</h4>
+                    <p>You can create an HTML element using the document.createElement() method.</p>
+                    <h4>Adding Elements</h4>
+                    <p>appendChild() (Adds as the last child),
+                        append() (Can add text and multiple nodes),
+                        prepend() (Adds as the first child),
+                        insertBefore() (Inserts before a specific element)</p>
+
+                    <h4>Removing Elements</h4>    
+                    <p>removeChild() (Removes a specific child node)
+                        remove() (Removes itself)</p>
+                </div>
+                
+            </div>
         </div> 
     </main>
 </body>
