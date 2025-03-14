@@ -3,7 +3,7 @@
     let taskCount = document.getElementById('task_count');
     let number =document.getElementById('number');
     let parentDiv = document.getElementById('parent_div');
-
+    let clearBtn = document.getElementById('clear_btn');
   
 
     // set date
@@ -58,3 +58,9 @@
 
         });
     });
+
+    // clear Button
+
+    clearBtn.addEventListener('click',()=>{
+        parentDiv.textContent = '';
+    })
